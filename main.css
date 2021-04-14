@@ -220,6 +220,7 @@ h2 {
   position: absolute;
   bottom: 100px;
   right: -7vw;
+  width : 33%;
   animation: fly2 5s cubic-bezier(.2,0,.8,1) infinite;
 }
 
