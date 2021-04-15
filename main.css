@@ -527,6 +527,7 @@ h2 {
   position: absolute;
   top:-12vw;
   left:-18vw;
+  width: 100%;
 }
 #section-portfolio h2 {
   margin-bottom: 1.5em;
@@ -741,15 +742,66 @@ h2 {
   #section-formations #formations-top3 {
     width: 15%;
   }
+  /*Compétences*/
+  #section-competences #mongolfiere{
+    display:none;
+  }
+  #section-competences{
+    margin: 1em;
+    padding: 1em;
+    justify-content: center;
+  }
+  #section-competences .hard{
+    margin-bottom: 3em;
+  }
+  #section-competences .soft{
+    margin-bottom: 0em;
+  }
+  #section-competences h2{
+    margin-bottom: 1.5em;
+  }  
+  #section-competences .details{
+    display: none;
+  }
   /*Portfolio*/
+  #section-portfolio{
+    margin-top: 3em;
+  }
   #section-portfolio .portfolio-content{
     flex-direction: column;
+  }
+  #section-portfolio .portfolio-content #portfolio-geop-img{
+    width: 100%;
+  }
+  #section-portfolio .portfolio-content .geop-details{
+    margin-left: 0em;
+    text-align: center;
+  }
+  #section-portfolio .portfolio-content p{
+    margin-left: 0em;
+    text-align:left;
+  }
+  #section-portfolio .portfolio-content .geop-details h3{
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    text-align: center;
+  }
+  #section-portfolio .portfolio-content .geop-details ul{
+    margin-left : 1em;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+  }
+  #section-portfolio .portfolio-content .geop-details li{
+    font-size: 0.9em;
+    margin-bottom: .5em;
+    text-align: left;
   }
   /*Contact*/
   #section-contact .contact{
     padding: 1em;
     margin : auto;
     height: fit-content;
+    width: fit-content;
   }
   #section-contact h2{
     margin: auto;
@@ -765,6 +817,7 @@ h2 {
   #section-contact .ico{
     vertical-align : middle;
     margin: .4em;
+    padding: auto;
     width: 1.2em;
     height: 1.2em;
     fill-rule: var(--color-light);
