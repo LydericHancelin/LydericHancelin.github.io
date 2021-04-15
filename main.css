@@ -220,7 +220,7 @@ h2 {
   position: absolute;
   bottom: 100px;
   right: -7vw;
-  width : 33%;
+  width : 15%;
   animation: fly2 5s cubic-bezier(.2,0,.8,1) infinite;
 }
 
@@ -531,10 +531,12 @@ h2 {
 #section-portfolio h2 {
   margin-bottom: 1.5em;
 }
-
 #section-portfolio .portfolio-content{
   display : flex;
   align-items: center;
+}
+#section-portfolio .portfolio-content #portfolio-geop-img{
+  width: 100%;
 }
 #section-portfolio .portfolio-content .geop-details{
   margin-left: 2em;
@@ -569,7 +571,6 @@ h2 {
   margin: auto;
   position: relative;
 }
-
 #section-contact {
   background-color: var(--background-color-light);
   padding: 12em 0 5em 0;
@@ -578,7 +579,6 @@ h2 {
   margin-right: 0;
   position: relative;
 }
-
 #section-contact #separateur-contact {
   position: absolute;
   top: 0;
@@ -586,7 +586,6 @@ h2 {
   width: 100%;
   transform: translateY(calc(-100% + 1px));
 }
-
 #section-contact .ico{
   vertical-align : middle;
 	margin-right : 6px;
@@ -635,4 +634,145 @@ h2 {
   top: 50%;
   right: 0;
   transform: translate(90%, -50%);
+}
+
+@media all and (max-width: 800px){
+  .p-header{
+    display : none;
+  }
+  /*Commun*/
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em;
+  }
+  /*Menu*/
+  #menu{
+    display : none;
+  }
+  /*Présentation*/
+  #section-presentation #header-img {
+    width: 95%;
+  }
+  /*Expérences*/
+  #section-experiences-pro{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  #section-experiences-pro .experience-details{
+    display:none;
+  }
+  #section-experiences-pro .experience-venue{
+    font-size: .7em;
+    margin: 1em;
+    padding: auto;
+  }
+  #section-experiences-pro .experience-date{
+    display:none;
+  }
+  #section-experiences-pro .experience:not(:last-of-type) {
+    margin:0;
+  }
+  #section-experiences-asso{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  #section-experiences-asso .experience-details{
+    display:none;
+  }
+  #section-experiences-asso .experience-venue{
+    font-size: .7em;
+    margin: 1em;
+    padding: auto;
+  }
+  #section-experiences-asso .experience-date{
+    display:none;
+  }
+  #section-experiences-asso .experience:not(:last-of-type) {
+    margin:0;
+  }
+  /*Formation*/
+  #section-formations{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  #section-formations .formation{
+    text-align: center;
+    align-items: center;
+  }
+  #section-formations h2{
+    margin-top: 0em;
+  }
+  #section-formations .formation-details{
+    display:none;
+  }
+  #section-formations .formation-venue{
+    font-size: .7em;
+    margin: 1em;
+    padding: auto;
+  }
+  #section-formations .formation-date{
+    display:none;
+  }
+  #section-formations .formation:not(:last-of-type) {
+    margin:0;
+  }
+  #section-formations #formations-right {
+    display: none;
+  }
+  #section-formations #formations-top1 {
+    width: 10%;
+  }
+  #section-formations #formations-top2 {
+    width: 25%;
+  }
+  #section-formations #formations-top3 {
+    width: 15%;
+  }
+  /*Portfolio*/
+  #section-portfolio .portfolio-content{
+    flex-direction: column;
+  }
+  /*Contact*/
+  #section-contact .contact{
+    padding: 1em;
+    margin : auto;
+    height: fit-content;
+  }
+  #section-contact h2{
+    margin: auto;
+    text-align: center;
+  }
+  #section-contact .contact-card{
+    display: none;
+  }
+  #section-contact .contact-card-small{
+    display: flex;
+    justify-content: center;
+  }
+  #section-contact .ico{
+    vertical-align : middle;
+    margin: .4em;
+    width: 1.2em;
+    height: 1.2em;
+    fill-rule: var(--color-light);
+  }
+  #section-contact #contact-chapeau {
+    width: 80%;
+  }
+  #section-contact #contact-left-wing {
+    width: 80%;
+  }
+  #section-contact #contact-right-wing {
+    width: 80%;
+  }
 }
