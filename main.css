@@ -352,6 +352,7 @@ h2 {
   position: absolute;
   bottom: 0;
   transform: translateY(70%);
+  width: 100%;
   right: -10vw;
 }
 
@@ -394,12 +395,15 @@ h2 {
 }
 #section-formations #formations-top1 {
   animation: rotate 30s linear infinite;
+ 
 }
 #section-formations #formations-top2 {
   animation: rotate 50s linear reverse infinite;
+  
 }
 #section-formations #formations-top3 {
   animation: rotate 35s linear infinite;
+  
 }
 
 #section-formations #formations-bottom-left {
@@ -448,7 +452,6 @@ h2 {
 #section-formations .formation-details li {
   padding-top: 1em;
 }
-
 /*Section Compétences informatique*/
 #section-competences{
   padding-left: 20vw;
@@ -460,6 +463,7 @@ h2 {
   top: 0;
   left: -15vw;
   transform: scale(1.2);
+  width: 40%;
 }
 #section-competences #mongolfiere{
   height:fit-content;
@@ -682,6 +686,7 @@ h2 {
   }
   #section-experiences-asso{
     margin-top: 2em;
+    margin-bottom: 10em;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -733,14 +738,17 @@ h2 {
   #section-formations #formations-right {
     display: none;
   }
-  #section-formations #formations-top1 {
+  #section-formations #formations-top1{
+    height: 10%;
     width: 10%;
   }
-  #section-formations #formations-top2 {
-    width: 25%;
+  #section-formations #formations-top2{
+    height: 30%;
+    width: 30%;
   }
-  #section-formations #formations-top3 {
-    width: 15%;
+  #section-formations #formations-top3{
+    height: 20%;
+    width: 20%;
   }
   /*Compétences*/
   #section-competences #mongolfiere{
