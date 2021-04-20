@@ -55,7 +55,6 @@
 @keyframes mongolfiere {
   0% {
     transform: rotate(-5deg);
-    top: 0;
   }
   10% {
     transform: rotate(5deg);
@@ -86,7 +85,15 @@
   }
   100% {
     transform: rotate(5deg);
-    top: 300px;
+  }
+}
+
+@keyframes mongolfiere-container {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(300px);
   }
 }
 
@@ -465,12 +472,15 @@ h2 {
   transform: scale(1.2);
   width: 40%;
 }
-#section-competences #mongolfiere{
-  height:fit-content;
+#section-competences #mongolfiere {
+  animation: mongolfiere 20s ease infinite alternate;
+}
+#section-competences #mongolfiere-container {
+  height: fit-content;
   width: fit-content;
   position: absolute;
   left: -10vw;
-  animation: mongolfiere 20s ease infinite alternate;
+  animation: mongolfiere-container 20s ease infinite alternate;
 }
 
 #section-competences .hard{
