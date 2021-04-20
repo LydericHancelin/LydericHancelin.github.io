@@ -304,7 +304,7 @@ h2 {
 #section-experiences-pro #avion2 {
   position: absolute;
   top: 50%;
-  right: 100vw;
+  right: 80vw;
   z-index: -9;
   animation: plane 20s infinite linear;
   max-width: 30vw;
