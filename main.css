@@ -793,6 +793,7 @@ background:
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 5em 7.5%;
   }
   #section-formations .formation{
     text-align: center;
