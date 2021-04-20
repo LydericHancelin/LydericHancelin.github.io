@@ -118,6 +118,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 body {
@@ -301,7 +303,8 @@ h2 {
   top: 50%;
   left: -15vw;
   z-index: -9;
-  animation: plane 20s infinite linear;;
+  animation: plane 20s infinite linear;
+  max-width: 30vw;
 }
 
 /* Section expériences asso */
