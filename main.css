@@ -196,10 +196,13 @@ h2 {
 	margin-bottom: 3em;
   width: 100%;
 }
-#section-presentation #header-img {
+#section-presentation .header-big {
   display: block;
   margin: auto;
   width: 50%;
+}
+#section-presentation .header-small {
+  display: none;
 }
 #section-presentation p {
 	text-align: center;
@@ -382,7 +385,7 @@ h2 {
   top: 1px;
   left: 0;
   width: 100%;
-  transform: translateY(calc(-100% + 1px));
+  transform: translateY(-100%);
 }
 
 #section-formations a{
@@ -602,7 +605,7 @@ h2 {
   top: 1px;
   left: 0;
   width: 100%;
-  transform: translateY(calc(-100% + 1px));
+  transform: translateY(-100%);
 }
 #section-contact .ico{
   vertical-align : middle;
@@ -671,6 +674,14 @@ h2 {
   #menu{
     display : none;
   }
+  #section-presentation .header-small {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+  #section-presentation .header-big {
+    display: none;
+  }
   /*Présentation*/
   #section-presentation #header-img {
     width: 95%;
@@ -686,10 +697,34 @@ h2 {
   /*Expérences*/
   #section-experiences-pro{
     margin-top: 2em;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+background:
+      -moz-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+      -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+      -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+      -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em);
+  background:
+        -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+        -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+        -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+        -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em);
+  background:
+        -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+        -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+        -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
+        -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em);
+
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 50% 50%;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
   }
   #section-experiences-pro .experience-details{
     display:none;
@@ -708,10 +743,34 @@ h2 {
   #section-experiences-asso{
     margin-top: 2em;
     margin-bottom: 10em;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    background:
+      -moz-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+      -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+      -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+      -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em);
+  background:
+        -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+        -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+        -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+        -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em);
+  background:
+        -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+        -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+        -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
+        -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em);
+
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 50% 50%;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
   }
   #section-experiences-asso .experience-details{
     display:none;
@@ -776,7 +835,9 @@ h2 {
     display:none;
   }
   #section-competences{
-    margin: 1em;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 3em;
     padding: 1em;
     justify-content: center;
   }
@@ -798,6 +859,8 @@ h2 {
   /*Portfolio*/
   #section-portfolio{
     margin-top: 3em;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
   }
   #section-portfolio .portfolio-content{
     flex-direction: column;
