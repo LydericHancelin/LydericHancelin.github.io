@@ -672,6 +672,14 @@ h2 {
   #section-presentation #header-img {
     width: 95%;
   }
+  #section-presentation #avion1 {
+    bottom: 50px;
+    width: 20%;
+  }
+  #section-presentation #dirigeable {
+    top: -25px;
+  }
+
   /*Expérences*/
   #section-experiences-pro{
     margin-top: 2em;
@@ -819,7 +827,7 @@ h2 {
     padding: 1em;
     margin : auto;
     height: fit-content;
-    width: fit-content;
+    width: 85vw;
   }
   #section-contact h2{
     margin: auto;
@@ -829,6 +837,16 @@ h2 {
     display: none;
   }
   #section-contact .contact-card-small{
+    display: block;
+  }
+  #section-contact .contact-card-tel {
+    margin-top: 1em;
+    text-align: center;
+  }
+  #section-contact .contact-card-tel img {
+    margin-right: 1em
+  }
+  #section-contact .contact-card-icons {
     display: flex;
     justify-content: center;
   }
@@ -841,12 +859,12 @@ h2 {
     fill-rule: var(--color-light);
   }
   #section-contact #contact-chapeau {
-    width: 80%;
+    width: 40%;
   }
   #section-contact #contact-left-wing {
-    width: 80%;
+    display: none;
   }
   #section-contact #contact-right-wing {
-    width: 80%;
+    display: none;
   }
 }
