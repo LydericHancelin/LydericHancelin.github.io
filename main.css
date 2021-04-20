@@ -396,10 +396,6 @@ h2 {
   left: 50%;
   transform: translate(-50%, -55%) scale(1.2);
 }
-#section-formations #formations-top img {
-  width: fit-content;
-  height: fit-content;
-}
 #section-formations #formations-top1 {
   animation: rotate 30s linear infinite;
  
@@ -416,6 +412,7 @@ h2 {
 #section-formations #formations-bottom-left {
   position: absolute;
   bottom: 0;
+  width: 60%;
   left: 2%;
 }
 #section-formations #formations-right {
