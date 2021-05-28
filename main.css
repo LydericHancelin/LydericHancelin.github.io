@@ -387,11 +387,12 @@ h2 {
   width: 100%;
   transform: translateY(-100%);
 }
-
 #section-formations a{
   color: var(--color-light);
 }
-
+#section-formations a:hover{
+  text-decoration: underline;
+}
 #section-formations #formations-top {
   position: absolute;
   width: 100%;
@@ -488,7 +489,13 @@ h2 {
   left: -10vw;
   animation: mongolfiere-container 20s ease infinite alternate;
 }
-
+#section-competences a{
+  text-decoration: none;
+  color: var(--color-title);
+}
+#section-competences a:hover{
+  text-decoration: underline;
+}
 #section-competences .hard{
   margin-bottom: 5em;
 }
