@@ -607,6 +607,8 @@ h2 {
   margin-left: 0;
   margin-right: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 #section-contact #separateur-contact {
   position: absolute;
@@ -637,6 +639,12 @@ h2 {
 #section-contact a{
   color: var(--color-light);
   margin: 1em 0;
+}
+#section-contact .dl{
+  color: var(--color-title);
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
 #section-contact a::after {
 	content: '';
