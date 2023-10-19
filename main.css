@@ -2,7 +2,7 @@
   0% {
     transform: rotate(0deg);
   }
-  100% { 
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -98,22 +98,22 @@
 }
 
 * {
-	--background-color: #ff9800;
-	--background-color-dark: #303130;
+  --background-color: #ff9800;
+  --background-color-dark: #303130;
   --background-color-red: #902828;
-  --background-color-light:#FDD396;
-	--background-gradient-color-1: rgba(255, 232, 197, 0.77);
-	--background-gradient-color-2: rgba(233, 194, 137, 0.77);
-	--color-title: #592818;
-	--color-light: #f3c177;
-  --color-lanceRouge:#D32F2F;
-  --color-lanceNoire:#333333;
-	font-family: Courier;
+  --background-color-light: #fdd396;
+  --background-gradient-color-1: rgba(255, 232, 197, 0.77);
+  --background-gradient-color-2: rgba(233, 194, 137, 0.77);
+  --color-title: #592818;
+  --color-light: #f3c177;
+  --color-lanceRouge: #d32f2f;
+  --color-lanceNoire: #333333;
+  font-family: Courier;
   font-size: 1.02em;
-	text-decoration: none;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -123,27 +123,27 @@ html {
 }
 
 body {
-	background: radial-gradient(
-			59.91% 50% at 50% 50%,
-			var(--background-gradient-color-1) 0%,
-			var(--background-gradient-color-2) 100%
-		),
-		var(--background-color);
+  background: radial-gradient(
+      59.91% 50% at 50% 50%,
+      var(--background-gradient-color-1) 0%,
+      var(--background-gradient-color-2) 100%
+    ),
+    var(--background-color);
   width: 100vw;
   overflow-x: hidden;
   position: relative;
 }
 
 body::before {
-  content: '';
-	background-image: url('./background.png');
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-size: contain;
-	top: 0;
-	left: 0;
-	z-index: -10;
+  content: "";
+  background-image: url("./background.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
 
 section {
@@ -151,7 +151,7 @@ section {
   margin-right: 15%;
 }
 section:not(:last-of-type) {
-	margin-bottom: 5em;
+  margin-bottom: 5em;
 }
 
 h2 {
@@ -160,40 +160,40 @@ h2 {
 
 /* Menu */
 #menu {
-	display: flex;
-	justify-content: center;
-	padding: 2em;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
   margin-bottom: 10em;
 }
 #menu > a {
-	margin: 0 2em;
-	font-weight: 700;
-	font-size: 1.15em;
-	color: var(--color-title);
+  margin: 0 2em;
+  font-weight: 700;
+  font-size: 1.15em;
+  color: var(--color-title);
 }
 #menu > a::after {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 2px;
-	background-color: var(--color-title);
-	transform: scaleX(0);
-	transition: transform 0.2s;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-title);
+  transform: scaleX(0);
+  transition: transform 0.2s;
 }
 #menu > a:hover::after {
-	transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Section presentation */
 #section-presentation {
   position: relative;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-top: 5em;
 }
 #section-presentation header {
-	margin-bottom: 3em;
+  margin-bottom: 3em;
   width: 100%;
 }
 #section-presentation .header-big {
@@ -205,57 +205,96 @@ h2 {
   display: none;
 }
 #section-presentation p {
-	text-align: center;
+  text-align: center;
   font-weight: bold;
-	width: 66%;
-	margin-bottom: 3em;
-	color: var(--color-title);
+  width: 66%;
+  margin-bottom: 3em;
+  color: var(--color-title);
 }
 #section-presentation a {
-	border: none;
-	padding: 1em 3em;
-	background-color: var(--background-color-dark);
-	color: var(--color-light);
-	font-weight: bold;
+  border: none;
+  padding: 1em 3em;
+  background-color: var(--background-color-dark);
+  color: var(--color-light);
+  font-weight: bold;
 }
 #section-presentation a:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 #section-presentation #dirigeable {
   position: absolute;
   left: -20vw;
   top: -100px;
   width: 33%;
-  animation: fly 20s cubic-bezier(.3,0,.7,1) infinite;
+  animation: fly 20s cubic-bezier(0.3, 0, 0.7, 1) infinite;
 }
 #section-presentation #avion1 {
   position: absolute;
   bottom: 100px;
   right: -7vw;
-  width : 15%;
-  animation: fly2 5s cubic-bezier(.2,0,.8,1) infinite;
+  width: 15%;
+  animation: fly2 5s cubic-bezier(0.2, 0, 0.8, 1) infinite;
 }
 
 /* Section expériences */
 #section-experiences-pro {
-	color: var(--color-light);
-	padding: 4em 7em;
+  color: var(--color-light);
+  padding: 4em 7em;
   position: relative;
-  background:
-      -moz-radial-gradient(0 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-      -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-      -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-      -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em);
-  background:
-        -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-        -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-        -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-        -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em);
-  background:
-        -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-        -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-        -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em),
-        -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 4em, var(--background-color-dark) 2em);
+  background: -moz-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 4em,
+      var(--background-color-dark) 2em
+    ),
+    -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em),
+    -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em),
+    -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em);
+  background: -o-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 4em,
+      var(--background-color-dark) 2em
+    ),
+    -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em),
+    -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em),
+    -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em);
+  background: -webkit-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 4em,
+      var(--background-color-dark) 2em
+    ),
+    -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em),
+    -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em),
+    -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-dark
+          )
+          2em);
 
   background-position: bottom left, bottom right, top right, top left;
   -moz-background-size: 50% 50%;
@@ -277,27 +316,33 @@ h2 {
   z-index: -12;
 }
 #section-experiences-pro h2 {
-	text-align: center;
+  text-align: center;
   margin-bottom: 2em;
 }
 #section-experiences-pro .experience {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
+
+#section-experiences-pro .experience a {
+  color: var(--color-light);
+  text-decoration: underline;
+}
+
 #section-experiences-pro .experience:not(:last-of-type) {
   margin: 2em 0;
 }
 #section-experiences-pro .experience-title {
-	font-weight: bold;
-	font-family: 'Courier New';
+  font-weight: bold;
+  font-family: "Courier New";
 }
 #section-experiences-pro .experience-venue {
-	font-family: 'Courier New';
+  font-family: "Courier New";
   opacity: 50%;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 #section-experiences-pro .experience-date {
-	font-weight: bold;
+  font-weight: bold;
   margin-left: 2em;
   min-width: fit-content;
 }
@@ -312,24 +357,63 @@ h2 {
 
 /* Section expériences asso */
 #section-experiences-asso {
-	color: var(--color-light);
+  color: var(--color-light);
   position: relative;
-	padding: 4em 7em;
-  background:
-      -moz-radial-gradient(0 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-      -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-      -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-      -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em);
-  background:
-        -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-        -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-        -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-        -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em);
-  background:
-        -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-        -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-        -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em),
-        -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 4em, var(--background-color-red) 2em);
+  padding: 4em 7em;
+  background: -moz-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 4em,
+      var(--background-color-red) 2em
+    ),
+    -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em),
+    -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em),
+    -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em);
+  background: -o-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 4em,
+      var(--background-color-red) 2em
+    ),
+    -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em),
+    -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em),
+    -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em);
+  background: -webkit-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 4em,
+      var(--background-color-red) 2em
+    ),
+    -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em),
+    -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em),
+    -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
+            --background-color-red
+          )
+          2em);
 
   background-position: bottom left, bottom right, top right, top left;
   -moz-background-size: 50% 50%;
@@ -338,26 +422,26 @@ h2 {
   background-repeat: no-repeat;
 }
 #section-experiences-asso h2 {
-	text-align: center;
+  text-align: center;
 }
 #section-experiences-asso .experience {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 #section-experiences-asso .experience:not(:last-of-type) {
-	margin: 3em 0;
+  margin: 3em 0;
 }
 #section-experiences-asso .experience-title {
-	font-weight: bold;
-	font-family: 'Courier New';
+  font-weight: bold;
+  font-family: "Courier New";
 }
 #section-experiences-asso .experience-venue {
-	font-family: 'Courier New';
+  font-family: "Courier New";
   opacity: 50%;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 #section-experiences-asso .experience-date {
-	font-weight: bold;
+  font-weight: bold;
   margin-left: 2em;
   min-width: fit-content;
 }
@@ -387,10 +471,10 @@ h2 {
   width: 100%;
   transform: translateY(-100%);
 }
-#section-formations a{
+#section-formations a {
   color: var(--color-light);
 }
-#section-formations a:hover{
+#section-formations a:hover {
   text-decoration: underline;
 }
 #section-formations #formations-top {
@@ -405,15 +489,12 @@ h2 {
 }
 #section-formations #formations-top1 {
   animation: rotate 30s linear infinite;
- 
 }
 #section-formations #formations-top2 {
   animation: rotate 50s linear reverse infinite;
-  
 }
 #section-formations #formations-top3 {
   animation: rotate 35s linear infinite;
-  
 }
 
 #section-formations #formations-bottom-left {
@@ -437,14 +518,14 @@ h2 {
   margin-bottom: 2em;
 }
 #section-formations .formation {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   margin: 5em 0;
   width: 70%;
 }
 #section-formations .formation-title {
   font-weight: bold;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 #section-formations .formation-content {
   width: 100%;
@@ -458,8 +539,8 @@ h2 {
   opacity: 50%;
 }
 #section-formations .formation-details {
-  margin-left : 2em;
-  font-size: .9em;
+  margin-left: 2em;
+  font-size: 0.9em;
   text-align: justify;
   width: 80%;
 }
@@ -467,7 +548,7 @@ h2 {
   padding-top: 1em;
 }
 /*Section Compétences informatique*/
-#section-competences{
+#section-competences {
   padding-left: 20vw;
   position: relative;
   margin-top: 10em;
@@ -489,45 +570,48 @@ h2 {
   left: -10vw;
   animation: mongolfiere-container 20s ease infinite alternate;
 }
-#section-competences a{
+#section-competences a {
   text-decoration: none;
   color: var(--color-title);
   font-size: 0.7em;
 }
-#section-competences a:hover{
+#section-competences a:hover {
   text-decoration: underline;
 }
-#section-competences .hard{
+#section-competences .hard {
   margin-bottom: 5em;
 }
-#section-competences .soft{
+#section-competences .soft {
   margin-bottom: 5em;
 }
 
-#section-competences h2{
+#section-competences h2 {
   margin-bottom: 2em;
-}  
-#section-competences .title{
-  font-weight: bold;
-  margin-bottom: .5em;
 }
-#section-competences .content{
+#section-competences .title {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+#section-competences .content {
   display: grid;
   grid-template-columns: 2fr 3fr;
   margin: 2em 0;
 }
-#section-competences .details{
+#section-competences .details {
   max-width: 100%;
   font-size: 1em;
 }
-
-.lance{
-  display:flex;
+#section-competences a {
+  max-width: 100%;
+  font-size: 1em;
+}
+.lance {
+  display: flex;
   width: 100%;
   align-items: center;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
-.lanceNoire{
+.lanceNoire {
   background-color: var(--color-lanceNoire);
   height: 3px;
   flex: 1;
@@ -537,59 +621,59 @@ h2 {
   height: 3px;
   margin-right: 5px;
 }
-.lanceRouge1{
+.lanceRouge1 {
   width: 25%;
 }
-.lanceRouge2{
+.lanceRouge2 {
   width: 60%;
 }
-.lanceRouge3{
+.lanceRouge3 {
   width: 75%;
 }
 /*Section portfolio*/
-#section-portfolio{
+#section-portfolio {
   position: relative;
   margin-top: 10em;
 }
 #section-portfolio #portfolio-nuage {
   position: absolute;
-  top:-12vw;
-  left:-18vw;
+  top: -12vw;
+  left: -18vw;
   width: 100%;
 }
 #section-portfolio h2 {
   margin-bottom: 1.5em;
 }
-#section-portfolio .portfolio-content{
-  display : flex;
+#section-portfolio .portfolio-content {
+  display: flex;
   align-items: center;
 }
-#section-portfolio .portfolio-content #portfolio-geop-img{
+#section-portfolio .portfolio-content #portfolio-geop-img {
   width: 100%;
 }
-#section-portfolio .portfolio-content .geop-details{
+#section-portfolio .portfolio-content .geop-details {
   margin-left: 2em;
 }
-#section-portfolio .portfolio-content .geop-details h3{
+#section-portfolio .portfolio-content .geop-details h3 {
   margin-bottom: 2em;
   font-size: 1.12em;
 }
-#section-portfolio .portfolio-content .geop-details ul{
-  margin-left : 1em;
+#section-portfolio .portfolio-content .geop-details ul {
+  margin-left: 1em;
   margin-bottom: 2em;
   font-size: 1.1em;
 }
-#section-portfolio .portfolio-content .geop-details li{
+#section-portfolio .portfolio-content .geop-details li {
   font-size: 0.9em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   text-align: justify;
 }
 #section-portfolio .portfolio-content .geop-details a {
-	border: none;
-	padding: 1em 3em;
-	background-color: var(--background-color-dark);
-	color: var(--color-light);
-	font-weight: bold;
+  border: none;
+  padding: 1em 3em;
+  background-color: var(--background-color-dark);
+  color: var(--color-light);
+  font-weight: bold;
 }
 /*Section contact*/
 .contact {
@@ -617,51 +701,51 @@ h2 {
   width: 100%;
   transform: translateY(-100%);
 }
-#section-contact .ico{
-  vertical-align : middle;
-	margin-right : 6px;
+#section-contact .ico {
+  vertical-align: middle;
+  margin-right: 6px;
   width: 1em;
   height: 1em;
   fill-rule: var(--color-light);
 }
-#section-contact h2{
+#section-contact h2 {
   text-align: center;
-  margin-bottom: 2em;
+  margin: 2rem;
 }
-#section-contact .contact-card{
+#section-contact .contact-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-#section-contact .contact-card-small{
+#section-contact .contact-card-small {
   display: none;
 }
-#section-contact a{
+#section-contact a {
   color: var(--color-light);
   margin: 1em 0;
 }
-#section-contact .dl{
+#section-contact .dl {
   color: var(--color-title);
   justify-content: center;
   text-align: center;
   margin: auto;
 }
 #section-contact a::after {
-	content: '';
-	display: block;
-	height: 2px;
-	background-color: var(--color-light);
-	transform: scaleX(0);
-	transition: transform 0.2s;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--color-light);
+  transform: scaleX(0);
+  transition: transform 0.2s;
 }
 #section-contact a:hover::after {
-	transform: scaleX(1);
+  transform: scaleX(1);
 }
 #section-contact #contact-chapeau {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%,-85%);
+  transform: translate(-50%, -85%);
 }
 #section-contact #contact-left-wing {
   position: absolute;
@@ -676,19 +760,19 @@ h2 {
   transform: translate(90%, -50%);
 }
 
-@media all and (max-width: 800px){
-  .p-header{
-    display : none;
+@media all and (max-width: 800px) {
+  .p-header {
+    display: none;
   }
   /*Commun*/
-  h2{
+  h2 {
     font-size: 1.5em;
     text-align: center;
     margin: 1em;
   }
   /*Menu*/
-  #menu{
-    display : none;
+  #menu {
+    display: none;
   }
   #section-presentation .header-small {
     display: block;
@@ -711,7 +795,7 @@ h2 {
   }
 
   /*Expérences*/
-  #section-experiences-pro{
+  #section-experiences-pro {
     margin-top: 2em;
     margin-left: 7.5%;
     margin-right: 7.5%;
@@ -720,43 +804,86 @@ h2 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-background:
-      -moz-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-      -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-      -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-      -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em);
-  background:
-        -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-        -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-        -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-        -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em);
-  background:
-        -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-        -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-        -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em),
-        -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-dark) 1em);
+    background: -moz-radial-gradient(
+        0 100%,
+        circle,
+        rgba(204, 0, 0, 0) 2em,
+        var(--background-color-dark) 1em
+      ),
+      -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em),
+      -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em),
+      -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em);
+    background: -o-radial-gradient(
+        0 100%,
+        circle,
+        rgba(204, 0, 0, 0) 2em,
+        var(--background-color-dark) 1em
+      ),
+      -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em),
+      -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em),
+      -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em);
+    background: -webkit-radial-gradient(
+        0 100%,
+        circle,
+        rgba(204, 0, 0, 0) 2em,
+        var(--background-color-dark) 1em
+      ),
+      -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em),
+      -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em),
+      -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-dark
+            )
+            1em);
 
-  background-position: bottom left, bottom right, top right, top left;
-  -moz-background-size: 50% 50%;
-  -webkit-background-size: 50% 50%;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
+    background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
   }
-  #section-experiences-pro .experience-details{
-    display:none;
+  #section-experiences-pro .experience-details {
+    display: none;
   }
-  #section-experiences-pro .experience-venue{
-    font-size: .7em;
+  #section-experiences-pro .experience-venue {
+    font-size: 0.7em;
     margin: 1em;
     padding: auto;
   }
-  #section-experiences-pro .experience-date{
-    display:none;
+  #section-experiences-pro .link {
+    text-decoration: none;
+    color: var(--color-light);
+  }
+  #section-experiences-pro .experience-date {
+    display: none;
   }
   #section-experiences-pro .experience:not(:last-of-type) {
-    margin:0;
+    margin: 0;
   }
-  #section-experiences-asso{
+  #section-experiences-asso {
     margin-top: 2em;
     margin-bottom: 10em;
     margin-left: 7.5%;
@@ -766,44 +893,83 @@ background:
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background:
-      -moz-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-      -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-      -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-      -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em);
-  background:
-        -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-        -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-        -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-        -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em);
-  background:
-        -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-        -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-        -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em),
-        -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 2em, var(--background-color-red) 1em);
+    background: -moz-radial-gradient(
+        0 100%,
+        circle,
+        rgba(204, 0, 0, 0) 2em,
+        var(--background-color-red) 1em
+      ),
+      -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em),
+      -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em),
+      -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em);
+    background: -o-radial-gradient(
+        0 100%,
+        circle,
+        rgba(204, 0, 0, 0) 2em,
+        var(--background-color-red) 1em
+      ),
+      -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em),
+      -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em),
+      -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em);
+    background: -webkit-radial-gradient(
+        0 100%,
+        circle,
+        rgba(204, 0, 0, 0) 2em,
+        var(--background-color-red) 1em
+      ),
+      -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em),
+      -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em),
+      -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
+              --background-color-red
+            )
+            1em);
 
-  background-position: bottom left, bottom right, top right, top left;
-  -moz-background-size: 50% 50%;
-  -webkit-background-size: 50% 50%;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
+    background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
   }
-  #section-experiences-asso .experience-details{
-    display:none;
+  #section-experiences-asso .experience-details {
+    display: none;
   }
-  #section-experiences-asso .experience-venue{
-    font-size: .7em;
+  #section-experiences-asso .experience-venue {
+    font-size: 0.7em;
     margin: 1em;
     padding: auto;
   }
-  #section-experiences-asso .experience-date{
-    display:none;
+  #section-experiences-asso .experience-date {
+    display: none;
   }
   #section-experiences-asso .experience:not(:last-of-type) {
-    margin:0;
+    margin: 0;
   }
   /*Formation*/
-  #section-formations{
+  #section-formations {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
@@ -811,118 +977,118 @@ background:
     align-items: center;
     padding: 5em 7.5%;
   }
-  #section-formations .formation{
+  #section-formations .formation {
     text-align: center;
     align-items: center;
   }
-  #section-formations h2{
+  #section-formations h2 {
     margin-top: 0em;
   }
-  #section-formations .formation-details{
-    display:none;
+  #section-formations .formation-details {
+    display: none;
   }
-  #section-formations .formation-venue{
-    font-size: .7em;
+  #section-formations .formation-venue {
+    font-size: 0.7em;
     margin: 1em;
     padding: auto;
   }
-  #section-formations .formation-date{
-    display:none;
+  #section-formations .formation-date {
+    display: none;
   }
   #section-formations .formation:not(:last-of-type) {
-    margin:0;
+    margin: 0;
   }
   #section-formations #formations-right {
     display: none;
   }
-  #section-formations #formations-top1{
+  #section-formations #formations-top1 {
     height: 10%;
     width: 10%;
   }
-  #section-formations #formations-top2{
+  #section-formations #formations-top2 {
     height: 30%;
     width: 30%;
   }
-  #section-formations #formations-top3{
+  #section-formations #formations-top3 {
     height: 20%;
     width: 20%;
   }
   /*Compétences*/
-  #section-competences #mongolfiere{
-    display:none;
+  #section-competences #mongolfiere {
+    display: none;
   }
-  #section-competences{
+  #section-competences {
     margin-left: 7.5%;
     margin-right: 7.5%;
     margin-top: 3em;
     padding: 1em;
     justify-content: center;
   }
-  #section-competences .hard{
+  #section-competences .hard {
     margin-bottom: 3em;
   }
-  #section-competences .soft{
+  #section-competences .soft {
     margin-bottom: 0em;
   }
-  #section-competences h2{
+  #section-competences h2 {
     margin-bottom: 1.5em;
-  }  
-  #section-competences .details{
+  }
+  #section-competences .details {
     display: none;
   }
   #section-competences .content {
     grid-template-columns: 1fr;
   }
   /*Portfolio*/
-  #section-portfolio{
+  #section-portfolio {
     margin-top: 3em;
     margin-left: 7.5%;
     margin-right: 7.5%;
   }
-  #section-portfolio .portfolio-content{
+  #section-portfolio .portfolio-content {
     flex-direction: column;
   }
-  #section-portfolio .portfolio-content #portfolio-geop-img{
+  #section-portfolio .portfolio-content #portfolio-geop-img {
     width: 100%;
   }
-  #section-portfolio .portfolio-content .geop-details{
+  #section-portfolio .portfolio-content .geop-details {
     margin-left: 0em;
     text-align: center;
   }
-  #section-portfolio .portfolio-content p{
+  #section-portfolio .portfolio-content p {
     margin-left: 0em;
-    text-align:left;
+    text-align: left;
   }
-  #section-portfolio .portfolio-content .geop-details h3{
+  #section-portfolio .portfolio-content .geop-details h3 {
     margin-bottom: 1.5em;
     margin-top: 1em;
     text-align: center;
   }
-  #section-portfolio .portfolio-content .geop-details ul{
-    margin-left : 1em;
+  #section-portfolio .portfolio-content .geop-details ul {
+    margin-left: 1em;
     margin-bottom: 2em;
     font-size: 1.1em;
   }
-  #section-portfolio .portfolio-content .geop-details li{
+  #section-portfolio .portfolio-content .geop-details li {
     font-size: 0.9em;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     text-align: left;
   }
   /*Contact*/
-  #section-contact .contact{
+  #section-contact .contact {
     padding: 1em;
-    margin : auto;
+    margin: auto;
     height: fit-content;
     width: 85vw;
   }
-  #section-contact h2{
+  #section-contact h2 {
     margin: auto;
     text-align: center;
   }
-  #section-contact .contact-card{
+  #section-contact .contact-card {
     display: none;
   }
-  #section-contact .contact-card-small{
+  #section-contact .contact-card-small {
     display: block;
   }
   #section-contact .contact-card-tel {
@@ -930,15 +1096,15 @@ background:
     text-align: center;
   }
   #section-contact .contact-card-tel img {
-    margin-right: 1em
+    margin-right: 1em;
   }
   #section-contact .contact-card-icons {
     display: flex;
     justify-content: center;
   }
-  #section-contact .ico{
-    vertical-align : middle;
-    margin: .4em;
+  #section-contact .ico {
+    vertical-align: middle;
+    margin: 0.4em;
     padding: auto;
     width: 1.2em;
     height: 1.2em;
