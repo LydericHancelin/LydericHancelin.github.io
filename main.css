@@ -1095,19 +1095,26 @@ h2 {
     margin-top: 1em;
     text-align: center;
   }
+  #section-contact .contact-card-tel a {
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #section-contact .contact-card-tel img {
     margin-right: 1em;
   }
   #section-contact .contact-card-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   #section-contact .ico {
     vertical-align: middle;
     margin: 0.4em;
     padding: auto;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.2rem;
+    height: 1.2rem;
     fill-rule: var(--color-light);
   }
   #section-contact #contact-chapeau {
