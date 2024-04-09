@@ -428,6 +428,13 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+#section-experiences-asso
+  .experience
+  .experience-content
+  .experience-details
+  div {
+  margin: 0.5em 0;
+}
 #section-experiences-asso .experience .experience-content h3 {
   font-weight: 300;
   text-decoration: underline;
@@ -437,6 +444,7 @@ h2 {
 }
 #section-experiences-asso .experience .experience-content ul li {
   display: flex;
+  align-items: center;
 }
 #section-experiences-asso .experience:not(:last-of-type) {
   margin: 3em 0;
