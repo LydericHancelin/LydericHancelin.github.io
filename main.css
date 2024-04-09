@@ -435,6 +435,9 @@ h2 {
 #section-experiences-asso .experience .experience-content ul {
   list-style-type: none;
 }
+#section-experiences-asso .experience .experience-content ul li {
+  display: flex;
+}
 #section-experiences-asso .experience:not(:last-of-type) {
   margin: 3em 0;
 }
