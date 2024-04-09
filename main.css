@@ -427,6 +427,7 @@ h2 {
 #section-experiences-asso .experience {
   display: flex;
   justify-content: space-between;
+  color: aqua;
 }
 #section-experiences-asso .experience .experience-content h3 {
   font-weight: normal;
