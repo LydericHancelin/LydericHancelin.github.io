@@ -431,6 +431,9 @@ h2 {
 #section-experiences-asso .experience .experience-content > div {
   margin: 0.5em 0;
 }
+#section-experiences-asso .experience .experience-content > div img {
+  margin: 0 0.5em;
+}
 #section-experiences-asso .experience .experience-content h3 {
   font-weight: 300;
   text-decoration: underline;
