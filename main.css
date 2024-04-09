@@ -431,7 +431,7 @@ h2 {
 #section-experiences-asso .experience .experience-content > div {
   margin: 0.5em 0;
 }
-#section-experiences-asso .experience .experience-content > div a {
+#section-experiences-asso .experience .experience-content a {
   color: var(--color-light);
   text-decoration: underline;
 }
