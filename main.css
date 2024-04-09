@@ -432,7 +432,7 @@ h2 {
   font-weight: 300;
   text-decoration: underline;
 }
-#section-experiences-asso .experience .experience-content h3 ul {
+#section-experiences-asso .experience .experience-content ul {
   list-style-type: none;
 }
 #section-experiences-asso .experience:not(:last-of-type) {
