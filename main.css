@@ -123,7 +123,8 @@ html {
 }
 
 body {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       59.91% 50% at 50% 50%,
       var(--background-gradient-color-1) 0%,
       var(--background-gradient-color-2) 100%
@@ -241,62 +242,87 @@ h2 {
   color: var(--color-light);
   padding: 4em 7em;
   position: relative;
-  background: -moz-radial-gradient(
+  background:
+    -moz-radial-gradient(
       0 100%,
       circle,
       rgba(204, 0, 0, 0) 4em,
       var(--background-color-dark) 2em
     ),
-    -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em),
-    -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em),
-    -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em);
-  background: -o-radial-gradient(
+    -moz-radial-gradient(
+        100% 100%,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      ),
+    -moz-radial-gradient(
+        100% 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      ),
+    -moz-radial-gradient(
+        0 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      );
+  background:
+    -o-radial-gradient(
       0 100%,
       circle,
       rgba(204, 0, 0, 0) 4em,
       var(--background-color-dark) 2em
     ),
-    -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em),
-    -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em),
-    -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em);
-  background: -webkit-radial-gradient(
+    -o-radial-gradient(
+        100% 100%,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      ),
+    -o-radial-gradient(
+        100% 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      ),
+    -o-radial-gradient(
+        0 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      );
+  background:
+    -webkit-radial-gradient(
       0 100%,
       circle,
       rgba(204, 0, 0, 0) 4em,
       var(--background-color-dark) 2em
     ),
-    -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em),
-    -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em),
-    -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-dark
-          )
-          2em);
+    -webkit-radial-gradient(
+        100% 100%,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      ),
+    -webkit-radial-gradient(
+        100% 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      ),
+    -webkit-radial-gradient(
+        0 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-dark) 2em
+      );
 
-  background-position: bottom left, bottom right, top right, top left;
+  background-position:
+    bottom left,
+    bottom right,
+    top right,
+    top left;
   -moz-background-size: 50% 50%;
   -webkit-background-size: 50% 50%;
   background-size: 50% 50%;
@@ -360,62 +386,87 @@ h2 {
   color: var(--color-light);
   position: relative;
   padding: 4em 7em;
-  background: -moz-radial-gradient(
+  background:
+    -moz-radial-gradient(
       0 100%,
       circle,
       rgba(204, 0, 0, 0) 4em,
       var(--background-color-red) 2em
     ),
-    -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em),
-    -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em),
-    -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em);
-  background: -o-radial-gradient(
+    -moz-radial-gradient(
+        100% 100%,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      ),
+    -moz-radial-gradient(
+        100% 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      ),
+    -moz-radial-gradient(
+        0 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      );
+  background:
+    -o-radial-gradient(
       0 100%,
       circle,
       rgba(204, 0, 0, 0) 4em,
       var(--background-color-red) 2em
     ),
-    -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em),
-    -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em),
-    -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em);
-  background: -webkit-radial-gradient(
+    -o-radial-gradient(
+        100% 100%,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      ),
+    -o-radial-gradient(
+        100% 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      ),
+    -o-radial-gradient(
+        0 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      );
+  background:
+    -webkit-radial-gradient(
       0 100%,
       circle,
       rgba(204, 0, 0, 0) 4em,
       var(--background-color-red) 2em
     ),
-    -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em),
-    -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em),
-    -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 4em, var(
-            --background-color-red
-          )
-          2em);
+    -webkit-radial-gradient(
+        100% 100%,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      ),
+    -webkit-radial-gradient(
+        100% 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      ),
+    -webkit-radial-gradient(
+        0 0,
+        circle,
+        rgba(204, 0, 0, 0) 4em,
+        var(--background-color-red) 2em
+      );
 
-  background-position: bottom left, bottom right, top right, top left;
+  background-position:
+    bottom left,
+    bottom right,
+    top right,
+    top left;
   -moz-background-size: 50% 50%;
   -webkit-background-size: 50% 50%;
   background-size: 50% 50%;
@@ -668,6 +719,7 @@ h2 {
 #section-portfolio .portfolio-content {
   display: flex;
   align-items: center;
+  max-height: 5rem;
 }
 #section-portfolio .portfolio-content #portfolio-geop-img {
   width: 100%;
@@ -825,62 +877,87 @@ h2 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background: -moz-radial-gradient(
+    background:
+      -moz-radial-gradient(
         0 100%,
         circle,
         rgba(204, 0, 0, 0) 2em,
         var(--background-color-dark) 1em
       ),
-      -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em),
-      -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em),
-      -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em);
-    background: -o-radial-gradient(
+      -moz-radial-gradient(
+          100% 100%,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        ),
+      -moz-radial-gradient(
+          100% 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        ),
+      -moz-radial-gradient(
+          0 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        );
+    background:
+      -o-radial-gradient(
         0 100%,
         circle,
         rgba(204, 0, 0, 0) 2em,
         var(--background-color-dark) 1em
       ),
-      -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em),
-      -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em),
-      -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em);
-    background: -webkit-radial-gradient(
+      -o-radial-gradient(
+          100% 100%,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        ),
+      -o-radial-gradient(
+          100% 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        ),
+      -o-radial-gradient(
+          0 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        );
+    background:
+      -webkit-radial-gradient(
         0 100%,
         circle,
         rgba(204, 0, 0, 0) 2em,
         var(--background-color-dark) 1em
       ),
-      -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em),
-      -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em),
-      -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-dark
-            )
-            1em);
+      -webkit-radial-gradient(
+          100% 100%,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        ),
+      -webkit-radial-gradient(
+          100% 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        ),
+      -webkit-radial-gradient(
+          0 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-dark) 1em
+        );
 
-    background-position: bottom left, bottom right, top right, top left;
+    background-position:
+      bottom left,
+      bottom right,
+      top right,
+      top left;
     -moz-background-size: 50% 50%;
     -webkit-background-size: 50% 50%;
     background-size: 50% 50%;
@@ -914,62 +991,87 @@ h2 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background: -moz-radial-gradient(
+    background:
+      -moz-radial-gradient(
         0 100%,
         circle,
         rgba(204, 0, 0, 0) 2em,
         var(--background-color-red) 1em
       ),
-      -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em),
-      -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em),
-      -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em);
-    background: -o-radial-gradient(
+      -moz-radial-gradient(
+          100% 100%,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        ),
+      -moz-radial-gradient(
+          100% 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        ),
+      -moz-radial-gradient(
+          0 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        );
+    background:
+      -o-radial-gradient(
         0 100%,
         circle,
         rgba(204, 0, 0, 0) 2em,
         var(--background-color-red) 1em
       ),
-      -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em),
-      -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em),
-      -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em);
-    background: -webkit-radial-gradient(
+      -o-radial-gradient(
+          100% 100%,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        ),
+      -o-radial-gradient(
+          100% 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        ),
+      -o-radial-gradient(
+          0 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        );
+    background:
+      -webkit-radial-gradient(
         0 100%,
         circle,
         rgba(204, 0, 0, 0) 2em,
         var(--background-color-red) 1em
       ),
-      -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em),
-      -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em),
-      -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 2em, var(
-              --background-color-red
-            )
-            1em);
+      -webkit-radial-gradient(
+          100% 100%,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        ),
+      -webkit-radial-gradient(
+          100% 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        ),
+      -webkit-radial-gradient(
+          0 0,
+          circle,
+          rgba(204, 0, 0, 0) 2em,
+          var(--background-color-red) 1em
+        );
 
-    background-position: bottom left, bottom right, top right, top left;
+    background-position:
+      bottom left,
+      bottom right,
+      top right,
+      top left;
     -moz-background-size: 50% 50%;
     -webkit-background-size: 50% 50%;
     background-size: 50% 50%;
