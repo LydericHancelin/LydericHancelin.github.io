@@ -1170,6 +1170,7 @@ h2 {
     margin-top: 3em;
     margin-left: 7.5%;
     margin-right: 7.5%;
+    height: 25rem;
   }
   #section-portfolio .portfolio-content {
     flex-direction: column;
