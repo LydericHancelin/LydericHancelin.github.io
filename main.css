@@ -719,6 +719,11 @@ h2 {
 #section-portfolio .portfolio-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-height: 5rem;
+  gap: 2rem;
+}
+#section-portfolio .portfolio-content img {
   max-height: 5rem;
 }
 #section-portfolio .portfolio-content #portfolio-geop-img {
